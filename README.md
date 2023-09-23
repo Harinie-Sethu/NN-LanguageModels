@@ -6,6 +6,11 @@ Total number of sentences after cleaning was roughly 38 K.
 
 ## NNLM
 - 1_a.ipynb contain code for the NNLM model.
+- The input to the Neural Network would be the pre-trained embbeddings of the previous 5-words
+concatenated together(5-gram embedding).
+- These embedding would pass into a Hidden Layer which would output a 100-dimension vector. The output of the first Hidden Layer would go into another Hidden Layer, which would output a vector of size vocabulary. This vector would be passed to a Softmax Layer, which would output the probabilities of entire vocabulary
+occuring after the given 5-words.
+
 - The model was > 20 MB so you can view it in this link instead: https://drive.google.com/file/d/1FHNg3aY_cBlWr7qUsa49Zx8nQrCuGVqq/view?usp=sharing
 
 - 2021114008-LM1-test-perplexity and 2021114008-LM1-train-perplexity contain perplexity scores
@@ -14,6 +19,13 @@ Total number of sentences after cleaning was roughly 38 K.
 
 ## LSTM
 - 1_b.ipynb contain code for the LSTM model.
+- The Neural Network would consist of repeating layers in an LSTM-structure.
+- The input to each layer would consist of the hidden-layer and cell state output of the previous state, along
+with the embedding of the current word.
+- The 100-dimension output would be put into a Linear layer, which will transform it to vector of dimension
+of size vocabulary. Then, that to SoftMax-layer, which would provide the probability distribution over the
+entire vocabulary.
+
 - The model was > 20 MB so you can view it in this link instead: https://drive.google.com/file/d/1ivOhLnMTDQV_zn8pI78LXZGOeG642hRc/view?usp=sharing
 
 - 2021114008-LM2-test-perplexity and 2021114008-LM2-train-perplexity contain perplexity scores
