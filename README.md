@@ -1,11 +1,11 @@
 # NN-LanguageModels
-Built Neural Language Model - RNN and LSTM trained on Auguste_Maquet corpus
+Built Neural Language Model - RNN and LSTM trained on Auguste_Maquet corpus.  
 Total number of sentences after cleaning was roughly 38 K.  
 
 
 
 ## NNLM
-- 1_a.ipynb and 1_a.py contain code for the NNLM model
+- 1_a.ipynb contain code for the NNLM model.
 - The model was > 20 MB so you can view it in this link instead: https://drive.google.com/file/d/1FHNg3aY_cBlWr7qUsa49Zx8nQrCuGVqq/view?usp=sharing
 
 - 2021114008-LM1-test-perplexity and 2021114008-LM1-train-perplexity contain perplexity scores
@@ -13,7 +13,7 @@ Total number of sentences after cleaning was roughly 38 K.
 - average perp for train = 22508.5078
 
 ## LSTM
-- 1_b.ipynb and 1_b.py contain code for the LSTM model.
+- 1_b.ipynb contain code for the LSTM model.
 - The model was > 20 MB so you can view it in this link instead: https://drive.google.com/file/d/1ivOhLnMTDQV_zn8pI78LXZGOeG642hRc/view?usp=sharing
 
 - 2021114008-LM2-test-perplexity and 2021114008-LM2-train-perplexity contain perplexity scores
